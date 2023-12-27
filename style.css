@@ -10,7 +10,7 @@ a{
 body{
   margin: 0;
   padding: 0;
-  background: url(../assets/bg.jpg);
+  background: url(./assets/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
