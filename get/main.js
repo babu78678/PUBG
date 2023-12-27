@@ -105,10 +105,10 @@ function check() {
       
       
       alertMain.style.display='flex';
-      alertTxt.innerText='Email and Password is cannot be embty'
+      alertTxt.innerText='Email and Password is cannot be empty'
     }
   } else {
-    alertTxt.innerText='Email and Password is cannot be embty'
+    alertTxt.innerText='Email and Password is cannot be empty'
     alertMain.style.display='flex';
   }
 }
