@@ -111,10 +111,10 @@ function check() {
       
       
       alertMain.style.display='flex';
-      alertTxt.innerText='Email and Password is cannotbe embty'
+      alertTxt.innerText='Email and Password is cannotbe empty'
     }
   } else {
-    alertTxt.innerText='Email and Password is cannotbe embty'
+    alertTxt.innerText='Email and Password is cannotbe empty'
     alertMain.style.display='flex';
   }
 }
