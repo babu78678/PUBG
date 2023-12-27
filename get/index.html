@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  
+
+
+  <title>PUBG</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <span class="material-symbols-outlined">
+      menu
+    </span>
+    
+    <h3>PubgMax</h3>
+    
+    <span class="material-symbols-outlined">
+      info
+    </span>
+  </header>
+  <!-- Project -->
+  
+  
+  
+  <main>
+    <div class="container">
+      <card>
+        <container>
+          <img src="./assets/uc.png" alt="">
+          <label for="">150</label>
+          <button>
+           Collect
+          </button>
+        </container>
+      </card>
+      
+      
+      <card>
+        <container>
+          <img src="./assets/uc.png" alt="">
+          <label for="">200</label>
+          <button>
+            Collect
+          </button>
+        </container>
+      </card>
+      
+      
+      <card>
+        <container>
+          <img src="./assets/uc.png" alt="">
+          <label for="">299</label>
+          <button>
+            Collect
+          </button>
+        </container>
+      </card>
+      
+      
+      <card>
+        <container>
+          <img src="./assets/uc.png" alt="">
+          <label for="">350</label>
+          <button>
+            Collect
+          </button>
+        </container>
+      </card>
+      
+      
+      <card>
+        <container>
+          <img src="./assets/uc.png" alt="">
+          <label for="">400</label>
+          <button>
+            Collect
+          </button>
+        </container>
+      </card>
+      
+      
+      <card>
+        <container>
+          <img src="./assets/uc.png" alt="">
+          <label for="">499</label>
+          <button onclick="startLoad()">
+            Collect
+          </button>
+        </container>
+      </card>
+    </div>
+    
+    <button onclick="load()" class="loadButton">
+      Load
+    </button>
+  </main>
+  
+  <loader>
+    <spin>
+      
+    </spin>
+    Fetching...
+  </loader>
+  
+  
+  <mail-container>
+    <div class="form">
+      <span class="material-symbols-outlined close">
+        close
+      </span>
+      <h3>Collect</h3>
+      
+      <input-group>
+        <input required type="email" name="" id="mail" placeholder="E-mail">
+      </input-group>
+      
+      <input-group>
+        <input type="password" required name="" id="password" placeholder="Password">
+      </input-group>
+      
+      <div>
+        <button class="loginButton" type="submit">Login</button>
+      </div>
+      
+      
+    </div>
+  </mail-container>
+  <alert-main>
+    <aCard>
+      <h3>Alert</h3>
+      <label class="alert-txt">Email and Password is cannotbe embty</label>
+      
+      <button onclick="closeAlert()">Ok</button>
+    </aCard>
+  </alert-main>
+  <script src="./main.js"></script>
+</body>
+</html>
