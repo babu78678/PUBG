@@ -50,6 +50,11 @@
 const loader = document.querySelector('loader')
   function load(){
 loader.style.display='flex'
+    setTimeout(stopLoad, 5000)
+  }
+
+  function stopLoad(){
+    loader.style.display='none'
   }
 </script>
 
